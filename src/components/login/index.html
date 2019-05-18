@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        input {
+            -webkit-appearance: textfield;
+            background-color: white;
+            -webkit-rtl-ordering: logical;
+            cursor: text;
+            padding: 1px;
+            border-width: 2px;
+            border-style: inset;
+            border-color: initial;
+            border-image: initial;
+            outline: none;
+        }
+        .login{
+           background: url("./background.png");
+            width: 100vw;
+            height: 100vh;
+             display: flex;
+             flex-flow: column nowrap;
+             justify-content: center;
+        }
+        .wrapper {
+            text-align: center;
+        }
+        .header {
+            font-size: 25px;
+            font-family: 微软雅黑;
+            color: rgb(98,94,91);
+        }
+        .form{
+            background: url('./input-bg.png');
+            width: 260px;
+            height: 260px;
+            margin: 35px auto;
+            padding: 30px;
+            box-shadow: 0px 1px 2px 1px #aaaaaa, inset 0px 1px 1px rgba(255,255,255,0.7);
+            border-radius: 3px;
+        }
+        .form ul {
+            width: 100%;
+            height: 100%;
+            text-align: left;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+        }
+        ul li input{
+            height: 40px;
+            width: 190px;
+            padding: 0 35px;
+            border: none;
+            font-size: 16px;
+            background: #e1dcd8;
+            color: rgb(98,94,91);
+            box-shadow: 0px 1px 1px rgba(255,255,255,0.7), inset 0px 2px 5px #aaaaaa;
+            border-radius: 5px;
+        }
+        li{
+            position: relative;
+        }
+        ul li .name {
+            font-family: iconfont;
+            position: absolute;
+            top: 9px;
+            left: 10px;
+        }
+        ul li .mima {
+            font-family: iconfont;
+            position: absolute;
+            top: 9px;
+            left: 10px;
+        }
+        ul li input[type*="button"] {
+            width: 100%;
+            height: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: #ffffff;
+            background: -moz-linear-gradient( top, #94aa64 0%, #7a924a 50%, #607738);
+            background: -webkit-gradient( linear, left top, left bottom, from(#94aa64), color-stop(0.50, #7a924a), to(#607738));
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            border: 1px solid #7d8862;
+            -moz-box-shadow: 0px 1px 0px rgba(170,170,170,1), inset 0px 1px 1px rgba(255,255,255,0.7);
+            -webkit-box-shadow: 0px 1px 0px rgba(170,170,170,1), inset 0px 1px 1px rgba(255,255,255,0.7);
+            box-shadow: 0px 1px 0px rgba(170,170,170,1), inset 0px 1px 1px rgba(255,255,255,0.7);
+            text-shadow: 0px -1px 0px rgba(000,000,000,0.3), 0px 0px 0px rgba(255,255,255,0);
+        }
+        ul li input[type*="button"]:hover {
+            opacity: 0.8;
+        }
+        ul .remember {
+            font-size: 14px;
+            font-family: 微软雅黑;
+            font-weight: bold;
+            color: rgb(98,94,91);
+            position: relative;
+        }
+        ul .remember input[type*="checkbox"] {
+            width: 20px;
+            height: 20px;
+            vertical-align: super;
+            margin-right: 12px;
+            padding: 0;
+            visibility: hidden;
+        }
+        .remember label {
+            cursor: pointer;
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            top: 7px;
+            left: 0;
+            background: #eee;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+        .remember label:after {
+            opacity: 0.4;
+            content: '';
+            width: 12px;
+            height: 5px;
+            position: absolute;
+            background: transparent;
+            top: 6px;
+            left: 4px;
+            border: 3px solid #283a04;
+            border-top: none;
+            border-right: none;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+     <div class="login">
+         <div class="wrapper">
+             <div class="header">BBS登录</div>
+             <div class="form">
+                 <ul>
+                     <li>
+                         <div class="text">
+                             <span class="name"></span>
+                             <input type="text" placeholder="username">
+                         </div>
+                     </li>
+                     <li>
+                         <div class="password">
+                             <span class="mima"></span>
+                             <input type="text" placeholder="password">
+                         </div>
+                     </li>
+                     <li class="remember">
+                         <input type="checkbox" class="checkbox">
+                         <label for="checkbox">
+                         </label>
+                         Remember Me
+                     </li>
+                     <li>
+                         <input type="button" value="登录">
+                     </li>
+                 </ul>
+             </div>
+
+         </div>
+
+     </div>
+</body>
+</html>

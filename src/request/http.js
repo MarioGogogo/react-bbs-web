@@ -46,8 +46,8 @@ function errorState (response) {
 function successState (res) {
   // 隐藏loading
   // 统一判断后端返回的错误码(错误码与后台协商而定)
-  if (res.data.code === '000000') {
-    alert('success')
+  if (res.success) {
+    // alert('success')
     return res
   }
 }

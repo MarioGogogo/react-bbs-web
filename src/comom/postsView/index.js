@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import {Link} from "react-router-dom";
-import {getAxios, postAxios} from '../../request/http'
-import url from '../../request/api';
+
 import CSSModules from 'react-css-modules';
 import styles from './index.less'
 import PostItem from '../postItem';
