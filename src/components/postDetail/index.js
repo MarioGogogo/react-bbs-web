@@ -90,8 +90,24 @@ class PostsDetail extends Component{
    * 提交评论
    * @private
    */
-  _handleCommentSubmit=()=>{
+  _handleCommentSubmit=(content)=>{
+     const postId = this.props.match.params.id;
+     const comment ={
+        author:this.props.userId,
+        post:postId,
+        content,
+     }
+     this._saveComment(comment)
 
+  }
+
+  _saveComment(comment){
+    postAxios(url.createComment(),comment).then(data=>{
+      if(data.success){
+        console.log('评论提交完成')
+        this._refreshComments();
+      }
+    })
   }
 
   /**
