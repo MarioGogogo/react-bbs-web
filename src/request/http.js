@@ -15,8 +15,15 @@ axios.defaults.withCredentials = true
 // 添加请求拦截器，在发送请求之前做些什么(**具体查看axios文档**)--------------------------------------------
 axios.interceptors.request.use(function (config) {
   // 显示loading
-
-  return config
+  if(config.method === "post"){
+    const $token = sessionStorage.getItem('userToken')
+    console.log($token)
+    if ($token) {  // 判断是否存在token，如果存在的话，则每个http header都加上token
+      config.headers.Authorization = `token ${$token}`;
+    }
+  }
+  console.log(config)
+  return config;
 }, function (error) {
   // 请求错误时弹框提示，或做些其他事
   return Promise.reject(error)
@@ -33,23 +40,6 @@ axios.interceptors.response.use(function (response) {
 })
 
 
-//添加请求拦截 对请求之前token的校验
-// http request 拦截器
-axios.interceptors.request.use(
-  config => {
-      const $token = sessionStorage.getItem('userToken')
-    console.log($token)
-    //   if ($token) {  // 判断是否存在token，如果存在的话，则每个http header都加上token
-    //     config.headers.Authorization = `token ${$token}`;
-    // }
-    console.log(config)
-    return config;
-  },
-  err => {
-    //发送请求错误操作
-    console.log('请求失败')
-    return Promise.reject(err);
-  });
 
 
 

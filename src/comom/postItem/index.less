@@ -7,41 +7,45 @@
     border-bottom: 1px solid #cccccc;
   .left{
     flex: 1;
-    position: relative;
-    .title{
-      font-size: 16px;
-      padding-bottom:6px;
+    .top{
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: center;
+      padding-bottom:8px;
+      .title{
+        font-size: 12px;
+      }
+      .tags{
+        padding-left: 10px;
+        display: inline-block;
+        .tagthink{
+          font-size: 6px;
+          border-radius: 8px;
+          background: #f9181a;
+          padding: 2px 6px;
+          color: white;
+          margin-left: 4px;
+        }
+        .taghelp{
+          font-size: 6px;
+          border-radius: 8px;
+          background: #6978d9;
+          padding: 2px 6px;
+          color: white;
+          margin-left: 4px;
+        }
+        .tagclose{
+          font-size: 6px;
+          border-radius: 8px;
+          padding: 2px 6px;
+          margin-left: 4px;
+          background: #9cdb25;
+          color: white;
+        }
+      }
     }
-    .tags{
-      display: inline-block;
-      position: absolute;
-      left: 100px;
-      top: -4px;
-      .tagthink{
-         font-size: 6px;
-         border-radius: 8px;
-         background: #f9181a;
-         padding: 2px 6px;
-         color: white;
-         margin-left: 4px;
-      }
-      .taghelp{
-        font-size: 6px;
-        border-radius: 8px;
-        background: #6978d9;
-        padding: 2px 6px;
-        color: white;
-        margin-left: 4px;
-      }
-      .tagclose{
-        font-size: 6px;
-        border-radius: 8px;
-        padding: 2px 6px;
-        margin-left: 4px;
-       background: #9cdb25;
-        color: white;
-      }
-    }
+
   }
   .right{
     display: flex;

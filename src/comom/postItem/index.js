@@ -13,7 +13,10 @@ class PostItem extends Component{
     return (
        <li styleName="postItem">
            <div styleName="left">
-             <div styleName="title">{post.title}
+             <div styleName="top">
+               <div styleName="title">
+                 {post.title}
+               </div>
               <div styleName="tags"><span styleName="tagthink">想法交流</span><span styleName="taghelp">求助</span><span styleName="tagclose">已解决</span></div>
              </div>
              <div>
