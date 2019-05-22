@@ -11,7 +11,6 @@ class CommentList extends Component{
     this.state={
       value:""
     }
-
   }
 
   /**
@@ -19,7 +18,13 @@ class CommentList extends Component{
    * @private
    */
   _handleClick=()=>{
-    this.props.onSubmit()
+    this.props.onSubmit(this.state.value)
+  }
+
+  clearValue(){
+    this.setState({
+      value:''
+    })
   }
 
   _handleOnChange=(e)=>{
@@ -30,25 +35,27 @@ class CommentList extends Component{
   render() {
     const {comments,editable} = this.props;
     return (
-      <div className="commentlist">
-        <div className="title">评论</div>
+      <div styleName="commentlist">
+        <div styleName="title">评论</div>
         {
-          editable ? (
-            <div className="editor">
+          editable || 1==1 ? (
+            <div styleName="editor">
                <textarea
                  name="text"
+                 styleName="textarea"
                  placeholder="说说你的看法"
-                 onChange={this._onChange}
+                 onChange={this._handleOnChange}
                  value={this.state.value}
                  cols="30" rows="10"
                />
-               <button onClick={this._handleClick}></button>
+               <button styleName="btn"  onClick={this._handleClick}>提交评论</button>
             </div>
-          )
-            :(
-              <CommentView comments={comments} />
-            )
+          ):null
         }
+        {
+          comments.contents && <CommentView comments={comments} />
+        }
+
       </div>
 
 

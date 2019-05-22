@@ -1,24 +1,84 @@
 .postItem{
-    width: 100%;
-    line-height: 20px;
-    padding: 10px;
-    background:beige;
-    margin-top: 10px;
-    border-radius: 3px;
-  .title{
-    font-size: 16px;
-  }
-  .like{
-    margin-top: 10px;
-    .vote{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    padding:6px 10px;
+    border-bottom: 1px solid #cccccc;
+  .left{
+    flex: 1;
+    position: relative;
+    .title{
       font-size: 16px;
-      color: black;
-      padding-right: 10px;
+      padding-bottom:6px;
+    }
+    .tags{
+      display: inline-block;
+      position: absolute;
+      left: 100px;
+      top: -4px;
+      .tagthink{
+         font-size: 6px;
+         border-radius: 8px;
+         background: #f9181a;
+         padding: 2px 6px;
+         color: white;
+         margin-left: 4px;
+      }
+      .taghelp{
+        font-size: 6px;
+        border-radius: 8px;
+        background: #6978d9;
+        padding: 2px 6px;
+        color: white;
+        margin-left: 4px;
+      }
+      .tagclose{
+        font-size: 6px;
+        border-radius: 8px;
+        padding: 2px 6px;
+        margin-left: 4px;
+       background: #9cdb25;
+        color: white;
+      }
+    }
+  }
+  .right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .avatorurl{
+      width: 20px;
+      height: 20px;
+      border-radius:100%;
+    }
+    .like{
+      font-size: 10px;
+      padding-left: 10px;
+      .vote{
+        color: white;
+        padding-right: 4px;
+      }
+      .voteTitle{
+        color: white;
+      }
+    }
+    .comment{
+      font-size: 10px;
+      padding-left: 10px;
+      color: white;
+      .msg{
+        color: white;
+        padding-right: 4px;
+        .commentTitle{
+          color: white;
+        }
+      }
 
     }
-    .voteTitle{
-      font-size: 16px;
-      color: black;
-    }
   }
+}
+
+.postItem:hover{
+   background: #e2dad3;
 }

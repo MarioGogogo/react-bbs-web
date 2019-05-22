@@ -32,14 +32,14 @@ class PostEditor extends Component {
     this.props.onCancel()
   }
 
-  _handleSaveClcik=()=>{
+  _handleSaveClick=()=>{
      const data={
         title:this.state.title,
         content:this.state.content
      }
      //调用父组件方法
      this.props.onSave(data);
-  }
+}
 
 
 

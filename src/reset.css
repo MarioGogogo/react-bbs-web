@@ -28,9 +28,10 @@ article, aside, details, figcaption, figure,
 body {
   line-height: 1;
 }
-ol, ul {
+ol, ul,li {
   list-style: none;
 }
+
 a{
   text-decoration: none;
 }

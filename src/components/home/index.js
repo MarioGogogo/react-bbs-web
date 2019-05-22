@@ -3,37 +3,60 @@ import Header from '../header'
 import {Route} from 'react-router-dom'
 import PostsList from "../posts";
 import PostsDetail from "../postDetail";
-
+import CSSModules from 'react-css-modules';
+import styles from './index.less'
 
 class Home extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-      username: null
+    this.state={
+      username:null,
+      userId:null,
     }
+
+  }
+
+  componentDidMount() {
+    this._getSessionStorage();
+  }
+  _getSessionStorage = async()=>{
+    const username = await sessionStorage.getItem('username');
+    const userId = await sessionStorage.getItem('userid');
+    this.setState({
+      username:username,
+      userId:userId
+    })
   }
 
   _handleLogOut = () => {
-    alert('推出')
+    sessionStorage.removeItem('username')
+    sessionStorage.removeItem('userid')
+    sessionStorage.removeItem('role')
+    sessionStorage.removeItem('userToken')
+    this.setState({
+      username:null,
+      userId:null,
+    })
   }
 
   render() {
     const {match, location} = this.props;
-    const username = this.state;
-
+    const {username,userId} = this.state;
     return (
-      <div>
+      <div styleName="home">
         <Header
           username={username}
           onLogout={this._handleLogOut}
           location={location}
         />
-        <Route path={match.url} exact render={props => <PostsList username={username}  {...props} />} />
-        <Route path={`${match.url}/:id`} render={props => <PostsDetail username={username} {...props}/>}  />
+        <div styleName="content">
+          <Route path={match.url} exact render={props => <PostsList username={username} userId={userId}  {...props} />} />
+          <Route path={`${match.url}/:id`} render={props => <PostsDetail username={username} userId={userId} {...props}/>}  />
+        </div>
       </div>
     )
 
   }
 }
 
-export default Home
+export default CSSModules(Home,styles)

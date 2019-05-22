@@ -9,18 +9,22 @@ class CommentView extends Component{
 
   render() {
     const {comments} = this.props;
+    const items = comments.contents;
     return (
-       <ul className="commentsview">
+       <ul>
          {
-           comments.map((item,index)=>{
+           items.map((item,index)=>{
               return (
-                  <li key={item.author.id}>
-                    <div>{item.content}</div>
-                     <div className="sub">
-                        <span>{item.author.username}</span>
-                        <span>-</span>
-                        <span>{item.updatedAt}</span>
-                     </div>
+                  <li key={item.commentid} styleName="commentitem">
+                    <div styleName="left">
+                      <img styleName="avatorurl" src="http://img.52z.com/upload/news/image/20180108/20180108122831_73637.jpg" alt="avator"/>
+                    </div>
+                    <div styleName="right">
+                       <div styleName="info">
+                         <span>{item.author.username}</span><span styleName="time">{item.time}</span>
+                       </div>
+                         <div>{item.content}</div>
+                    </div>
                   </li>
               )
            })

@@ -5,6 +5,8 @@ import LoadingUtil from "../util/loadingUtil";
 // 在config.js文件中统一存放一些公共常量，方便之后维护
 import { baseURL } from './config.js'
 
+
+
 axios.defaults.headers = {
   "Content-Type": "application/x-www-form-urlencoded"
 }
@@ -29,6 +31,29 @@ axios.interceptors.response.use(function (response) {
   // 对响应错误做点什么
   return Promise.reject(error)
 })
+
+
+//添加请求拦截 对请求之前token的校验
+// http request 拦截器
+axios.interceptors.request.use(
+  config => {
+      const $token = sessionStorage.getItem('userToken')
+    console.log($token)
+    //   if ($token) {  // 判断是否存在token，如果存在的话，则每个http header都加上token
+    //     config.headers.Authorization = `token ${$token}`;
+    // }
+    console.log(config)
+    return config;
+  },
+  err => {
+    //发送请求错误操作
+    console.log('请求失败')
+    return Promise.reject(err);
+  });
+
+
+
+
 
 // 封装数据返回失败提示函数---------------------------------------------------------------------------
 function errorState (response) {

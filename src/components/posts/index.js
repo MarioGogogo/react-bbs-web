@@ -12,7 +12,7 @@ import PostsView from '../../comom/postsView'
   constructor(props) {
     super(props);
     this.state={
-      posts:[],
+      posts:null,
       newPost:false
     }
   }
@@ -27,7 +27,7 @@ import PostsView from '../../comom/postsView'
     getAxios(url.getPostList()).then(data=>{
        if(data.success){
          this.setState({
-           posts:data.data.list,
+           posts:data.data,
            newPost:false
          })
        }
@@ -51,9 +51,10 @@ import PostsView from '../../comom/postsView'
    _handleSave = (data)=>{
       const postData = {
           ...data,
-          author:this.props.userId,
-          vote:0,
+          id:this.props.userId,
+          username:this.props.username
       }
+      console.log(postData)
       postAxios(url.createPost(),postData).then(data =>{
          if(data.success){
            //刷新帖子
@@ -76,11 +77,20 @@ import PostsView from '../../comom/postsView'
     return (
         <div styleName="postList">
             <div>
-               <h2 styleName="title">话题列表</h2>
-              {userId ? ( <div styleName="btnWrapper"><button styleName="btn" onClick={this._handleNewPost}>发帖</button></div>) : null}
+              <div styleName="contentheader">
+                <div styleName="left">
+                  <span styleName="title">讨论区</span>
+                </div>
+                <div styleName="right">
+                  <input styleName="input" type="text" placeholder="输入搜索关键字"/>
+                  {userId ? (<button styleName="btn" onClick={this._handleNewPost}>发帖</button>) : null}
+                </div>
+              </div>
             </div>
-          {this.state.newPost ? (<PostEditor onSave={this._handleSave} onCancel={this._handleCancel} />) : null}
-          <PostsView posts={this.state.posts}/>
+          {this.state.newPost && userId ? (<PostEditor onSave={this._handleSave} onCancel={this._handleCancel} />) : null}
+          {
+            this.state.posts && <PostsView posts={this.state.posts}/>
+          }
         </div>
     )
   }

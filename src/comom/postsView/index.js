@@ -11,7 +11,7 @@ class PostsView extends Component{
     return (
        <ul styleName="postsView">
          {posts.map((item,index)=>{
-           return <Link key={item.id}  to={`/posts/${item.id}`}>
+           return <Link key={item._id}  to={`/posts/${item._id}`}>
               <PostItem post={item}/>
            </Link>
          })}

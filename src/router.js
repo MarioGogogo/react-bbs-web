@@ -1,9 +1,6 @@
 import  React from 'react'
 import {Switch,Route}  from 'react-router-dom'
-
 import Login from './components/login'
-// import PostsDetail from './components/posts'
-// import PostList  from './components/posts/list'
 import Home from './components/home';
 
 function Routers() {
