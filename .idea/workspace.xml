@@ -2,41 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9e84c8d-98b1-4362-a8d0-524d031751d0" name="默认更改列表" comment="【 。；">
-      <change afterPath="$PROJECT_DIR$/src/components/home/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/image/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/image/input-bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/start.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comom/commentView/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/comom/commentView/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comom/commentView/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/comom/commentView/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comom/comments/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/comom/comments/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comom/comments/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/comom/comments/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comom/postEditor/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/comom/postEditor/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comom/postEditor/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/comom/postEditor/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comom/postItem/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/comom/postItem/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comom/postItem/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/comom/postItem/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comom/postView/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/comom/postView/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comom/postView/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/comom/postView/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comom/postsView/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/comom/postsView/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comom/postsView/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/comom/postsView/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/postDetail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/postDetail/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/posts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/posts/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/posts/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/posts/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gloab.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/gloab.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/request/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/request/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/request/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/request/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/request/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/request/http.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/reset.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -98,7 +64,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/request/http.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="369">
@@ -106,6 +72,18 @@
               <folding>
                 <element signature="e#62#81#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="483">
+                <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -153,7 +131,6 @@
         <option value="$PROJECT_DIR$/src/comom/loading.less" />
         <option value="$PROJECT_DIR$/src/components/posts/list.js" />
         <option value="$PROJECT_DIR$/src/App.less" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/comom/postEditor.js" />
         <option value="$PROJECT_DIR$/src/reset.js" />
         <option value="$PROJECT_DIR$/src/components/postDetail/index.less" />
@@ -189,6 +166,7 @@
         <option value="$PROJECT_DIR$/src/request/api.js" />
         <option value="$PROJECT_DIR$/src/components/postDetail/index.js" />
         <option value="$PROJECT_DIR$/src/request/http.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -212,106 +190,6 @@
             <path>
               <item name="react-BBS实战" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-BBS实战" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-BBS实战" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-BBS实战" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-BBS实战" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-BBS实战" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="comom" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-BBS实战" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-BBS实战" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="comom" type="462c0819:PsiDirectoryNode" />
-              <item name="comments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-BBS实战" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-BBS实战" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="comom" type="462c0819:PsiDirectoryNode" />
-              <item name="commentView" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-BBS实战" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-BBS实战" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="comom" type="462c0819:PsiDirectoryNode" />
-              <item name="postEditor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-BBS实战" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-BBS实战" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="comom" type="462c0819:PsiDirectoryNode" />
-              <item name="postItem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-BBS实战" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-BBS实战" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="comom" type="462c0819:PsiDirectoryNode" />
-              <item name="postsView" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-BBS实战" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-BBS实战" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="comom" type="462c0819:PsiDirectoryNode" />
-              <item name="postView" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-BBS实战" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-BBS实战" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-BBS实战" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-BBS实战" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="header" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-BBS实战" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-BBS实战" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-BBS实战" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-BBS实战" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-BBS实战" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-BBS实战" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="postDetail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-BBS实战" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-BBS实战" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="posts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-BBS实战" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-BBS实战" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="request" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -375,12 +253,12 @@
       <workItem from="1558275885195" duration="2605000" />
       <workItem from="1558434431910" duration="3185000" />
       <workItem from="1558449492713" duration="9879000" />
-      <workItem from="1558488489418" duration="22141000" />
+      <workItem from="1558488489418" duration="22442000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82103000" />
+    <option name="totallyTimeSpent" value="82404000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -468,16 +346,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
           <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="46">
-            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -792,6 +660,16 @@
           <folding>
             <element signature="e#62#81#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="483">
+            <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
