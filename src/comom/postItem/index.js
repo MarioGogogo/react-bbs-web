@@ -34,7 +34,7 @@ class PostItem extends Component{
               </div>
               <div styleName="comment">
                 <FaComment styleName="msg"/>
-                <span styleName="commentTitle">10</span>
+                <span styleName="commentTitle">{post.comment_list.length > 0 ? post.comment_list[0].total : 0 }</span>
               </div>
            </div>
 

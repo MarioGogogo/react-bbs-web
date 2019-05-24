@@ -25,7 +25,7 @@ console.log('服务环境',process.env.NODE_ENV)
 
 export default {
   //注册
-  register: () => "/regist",
+  register: () => "/register",
   //登录
   login: () => "/login",
   //获取列表

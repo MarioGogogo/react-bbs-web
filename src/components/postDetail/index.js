@@ -167,6 +167,11 @@ class PostsDetail extends Component {
   }
 
   render() {
+    // const {from} = this.props.location.state || {from: {pathname: "/login"}};
+    // const userid = sessionStorage.getItem('userid')
+    // if (!userid) {
+    //   return <Redirect to={from}/>
+    // }
     const {post, comments, editing, isLike} = this.state;
     const {userId} = this.props;
     if (!post) {

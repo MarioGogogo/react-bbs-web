@@ -22,7 +22,7 @@ axios.interceptors.request.use(function (config) {
       config.headers.Authorization = `token ${$token}`;
     }
   }
-  console.log(config)
+  // console.log(config)
   return config;
 }, function (error) {
   // 请求错误时弹框提示，或做些其他事

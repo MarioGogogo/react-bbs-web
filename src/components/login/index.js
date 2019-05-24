@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Redirect} from 'react-router-dom';
+import {Redirect,Link} from 'react-router-dom';
 import {postAxios} from '../../request/http'
 import url from '../../request/api';
 import CSSModules from 'react-css-modules';
@@ -14,6 +14,10 @@ class Login extends Component {
       username: "",
       password: ""
     }
+  }
+
+  componentDidMount() {
+    console.log('是否重来',this.state.redirectToReferrer)
   }
 
   _handleSubmit = (e) => {
@@ -98,7 +102,10 @@ class Login extends Component {
                 <input type="checkbox"/>
                 <label htmlFor="checkbox">
                 </label>
-                Remember Me
+                <span styleName="title">
+                    Remember Me
+                </span>
+                <Link to={"/register"}><span styleName="register" >注册</span></Link>
               </li>
               <li>
                 <input type="button" value="登录" onClick={this._handleSubmit}/>
@@ -107,11 +114,11 @@ class Login extends Component {
           </div>
         </div>
       </div>
-
     )
-
   }
 }
 
-export default CSSModules(Login, styles)
+const NewLogin = CSSModules(Login, styles)
+
+export default NewLogin
 

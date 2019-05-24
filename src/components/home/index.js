@@ -42,6 +42,8 @@ class Home extends Component {
   render() {
     const {match, location} = this.props;
     const {username,userId} = this.state;
+    console.log('match', match)
+    console.log('location', location)
     return (
       <div styleName="home">
         <Header

@@ -7,8 +7,6 @@ import registerServiceWorker from './registerServiceWorker';
 import './reset.css';
 
 
-
-
 function Root(){
     return (
       <React.Fragment>
