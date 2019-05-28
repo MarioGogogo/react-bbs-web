@@ -1,7 +1,7 @@
 {
   "apps":{
     "name":"BBSWeb",
-    "script":"/server.js",
+    "script":"server.js",
     "env":{
       "COMMON_VARIABLE":"true"
     },
@@ -18,7 +18,7 @@
       "repo":"https://github.com/MarioGogogo/react-bbs-web.git",
       "path":"/home/chan/test/production",
       "ssh_options":"StrictHostKeyChecking=no",
-      "post-deploy": "npm install --registry=https://registry.npm.taobao.org && npm run build && pm2 startOrRestart ecosystem.json --env production",
+      "post-deploy": "yarn && yarn build && pm2 startOrRestart ecosystem.json --env production",
       "pre-deploy-local": "echo '编译成功 是否上线！'",
       "env":{
         "NODE_ENV":"production"

@@ -19,8 +19,8 @@ app.use(async (ctx,next) =>{
 
 })
 
-const PORT = process.env.PORT || 9000;
+const PORT = process.env.PORT || 9090;
 
-app.listen(PORT, () => {
+app.listen(9090, () => {
   console.log(`App listening on port ${PORT}!`);
 });
