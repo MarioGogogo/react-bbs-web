@@ -1,7 +1,7 @@
 {
   "apps":{
     "name":"BBSWeb",
-    "script":"/react-bbs-web/index.js",
+    "script":"/server.js",
     "env":{
       "COMMON_VARIABLE":"true"
     },
@@ -16,7 +16,7 @@
       "port": "22",
       "ref":"origin/master",
       "repo":"https://github.com/MarioGogogo/react-bbs-web.git",
-      "path":"/home/chan/test/react-bbs-web/build",
+      "path":"/home/chan/test/production",
       "ssh_options":"StrictHostKeyChecking=no",
       "pre-deploy-local": "echo '编译成功 是否上线！'",
       "post-deploy":"yarn && yarn build && pm2 startOrRestart ecosystem.json --env production",
