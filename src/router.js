@@ -5,48 +5,80 @@ import Home from "./components/home";
 import Register from "./components/register";
 import ErrorPage from "./components/errorPage";
 import About from "./components/about";
+import PrivateRoute from './comom/privateRoute';
+
+const routeConfig = [
+  {
+    path:'/',
+    component:Home,
+  },
+  {
+    path:'/login',
+    component:Login,
+  },
+  {
+    path:'/register',
+    component:Register,
+  },
+  {
+    path:'/posts',
+    component:Home,
+  },
+  {
+    path:'/about',
+    component:About,
+    auth:true
+  },
+  {
+    path:'/404',
+    component:ErrorPage,
+  },
+]
+
+
 function Routers() {
   return (
     <main>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <PrivateRoute  config={routeConfig}  />
+        {/* <Route exact path="/" component={Home} />
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
-        <Route path="/posts" component={Home} />
+        <Route path="/posts" component={Home} /> */}
         {/* <Route path='/about' component={About} /> */}
-        <PrivateRoute path="/about" component={About} />
+        {/* <PrivateRoute path="/about" component={About} />
         <Route path="/404" component={ErrorPage} />
-        <Redirect to={"/404"} />
+        <Redirect to={"/404"} /> */}
       </Switch>
     </main>
   );
 }
 
 //路由守卫
-
-function PrivateRoute({ component: Component, ...rest }) {
-  //  render和component是二选一的
-  return (
-    <Route
-      {...rest}
-      render={props =>
-        auth.isLogin ? (
-          <Component {...props} />
-        ) : (
-          <Redirect
-            to={{
-              pathname: "/login",
-              state: { from: props.location.pathname }
-            }}
-          />
-        )
-      }
-    />
-  );
-  auth = {
-    isLogin: false
-  };
-}
+// function PrivateRoute({ component: Component, ...rest }) {
+//   //  render和component是二选一的
+//  const auth = {
+//     isLogin: false
+//   };
+//   return (
+//     <Route
+//       {...rest}
+//       render={props =>
+//         auth.isLogin ? (
+//           <Component {...props} />
+//         ) : (
+//           <Redirect
+//             to={{
+//               pathname: "/login",
+//               state: { from: props.location.pathname }
+//             }}
+//           />
+//         )
+//       }
+//     />
+//   );
+ 
+// }
 
 // const Posts = ({match}) =>{
 //     return (<React.Fragment>
