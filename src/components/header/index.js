@@ -23,8 +23,8 @@ class Header extends Component{
                  ) :(
                   <Link styleName="btn"   to={{pathname:"/login",state:{from:location}}}>登录</Link>
                  )}
+                 <Link styleName="about" to={{pathname:"/about",state:{from:location}}}>关于我</Link>
                </div>
-
             </div>
         </div>
     )

@@ -29,6 +29,9 @@ axios.interceptors.request.use(function (config) {
   return Promise.reject(error)
 })
 
+
+
+
 // 添加响应拦截器(**具体查看axios文档**)----------------------------------------------------------------
 axios.interceptors.response.use(function (response) {
   // 对响应数据做点什么，允许在数据返回客户端前，修改响应的数据
