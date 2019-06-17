@@ -3,10 +3,23 @@ import { Route, Redirect } from "react-router-dom";
 // 这个组件将根据登录的情况, 返回一个路由
 const PrivateRoute = ({ component: Component, ...props }) => {
   const { location, config } = props;
-  const { pathname } = location;
+  let { pathname } = location
   const isLogin = sessionStorage.getItem('userid')
+  let add = false
+
+  console.log(pathname.lastIndexOf("/"));
+  if(pathname.lastIndexOf("/") > 0){
+      pathname = pathname.slice(0,pathname.lastIndexOf("/"))
+      add = true
+  }
 
   const targetRouterConfig = config.find(v => v.path === pathname);
+  if(add){
+    targetRouterConfig.auth = true
+  }
+
+
+   console.log('看看',pathname,location, config,targetRouterConfig); 
   if (targetRouterConfig && !targetRouterConfig.auth && !isLogin) {
     const { component } = targetRouterConfig;
     return <Route exact path={pathname} component={component} />;
@@ -30,7 +43,12 @@ const PrivateRoute = ({ component: Component, ...props }) => {
   } else {
     // 非登陆状态下，当路由合法时且需要权限校验时，跳转到登陆页面，要求登陆
     if (targetRouterConfig && targetRouterConfig.auth) {
-      return <Redirect to="/login" />;
+      return  <Redirect
+                  to={{
+                    pathname: "/login",
+                    state: { from: props.location.pathname }
+                  }}
+                />
     } else {
       // 非登陆状态下，路由不合法时，重定向至 404
       return <Redirect to="/404" />;

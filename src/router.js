@@ -27,7 +27,7 @@ const routeConfig = [
   {
     path:'/about',
     component:About,
-    auth:true
+    auth:true       //代表需要登录权限
   },
   {
     path:'/404',

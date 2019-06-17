@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import Header from '../header'
-import {Route} from 'react-router-dom'
+import {Route,Redirect} from 'react-router-dom'
 import PostsList from "../posts";
 import PostsDetail from "../postDetail";
+
 import CSSModules from 'react-css-modules';
 import styles from './index.less'
 
@@ -12,6 +13,7 @@ class Home extends Component {
     this.state={
       username:null,
       userId:null,
+      redirectToReferrer: false,
     }
 
   }
@@ -33,17 +35,40 @@ class Home extends Component {
     sessionStorage.removeItem('userid')
     sessionStorage.removeItem('role')
     sessionStorage.removeItem('userToken')
-    this.setState({
-      username:null,
-      userId:null,
-    })
+    //判断当前路径是否是权限判断
+    const {match, location} = this.props;
+    if (location.pathname.lastIndexOf('/')>0) {
+      this.setState({
+        username:null,
+        userId:null,
+        redirectToReferrer:true
+      })
+    }else{
+      this.setState({
+        username:null,
+        userId:null,
+      })
+    }
+    
+
+    
+
+    
   }
 
   render() {
     const {match, location} = this.props;
-    const {username,userId} = this.state;
-    console.log('match', match)
-    console.log('location', location)
+    const {username,userId,redirectToReferrer} = this.state;
+    // console.log('match', match)c
+    // console.log('location', location)
+    if(redirectToReferrer){
+      return <Redirect
+          to={{
+            pathname: "/login",
+            state: { from:location.pathname }
+          }}
+        />
+    }
     return (
       <div styleName="home">
         <Header
@@ -54,6 +79,7 @@ class Home extends Component {
         <div styleName="content">
           <Route path={match.url} exact render={props => <PostsList username={username} userId={userId}  {...props} />} />
           <Route path={`${match.url}/:id`} render={props => <PostsDetail username={username} userId={userId} {...props}/>}  />
+          
         </div>
       </div>
     )
