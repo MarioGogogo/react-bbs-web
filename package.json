@@ -35,7 +35,7 @@
     "koa-static": "^5.0.0",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
-    "mongoose": "^5.5.9",
+    "mongoose": "^5.7.5",
     "object-assign": "4.1.1",
     "postcss-aspect-ratio-mini": "0.0.2",
     "postcss-cssnext": "^3.1.0",
